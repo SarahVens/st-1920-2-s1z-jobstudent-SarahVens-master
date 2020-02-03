@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2d_Jobstudent.Wpf"
         mc:Ignorable="d"
-        Title="Prestaties jobstudenten" Height="337.5" Width="662.712" Topmost="True">
+        Title="Prestaties jobstudenten" Height="337.5" Width="662.712" Topmost="True" Loaded="Window_Loaded">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="56,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" />
-        <Label Content="Naam" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="41" Height="23"/>
-        <ListBox HorizontalAlignment="Left" Height="231" Margin="10,64,0,0" VerticalAlignment="Top" Width="219" />
-        <Button Content="+" HorizontalAlignment="Left" Margin="205,21,0,0" VerticalAlignment="Top" Width="23" Height="23"/>
-        <Label Content="Aantal uren:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Margin="267,17,0,0"/>
-        <Label Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Margin="345,17,0,0"/>
-        <Label Content="Uurloon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Margin="267,48,0,0"/>
-        <Label Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Margin="345,48,0,0"/>
-        <Button Content="Naar lijst" HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Height="33"  Margin="267,94,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="274" Width="246" Background="#FFE3F0FD" Margin="399,21,0,0"/>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="23" Margin="56,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" TextChanged="txtNaam_TextChanged" />
+        <Label x:Name="lblNaam" Content="Naam" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="41" Height="23"/>
+        <ListBox x:Name="lstNamen" HorizontalAlignment="Left" Height="231" Margin="10,64,0,0" VerticalAlignment="Top" Width="219" SelectionChanged="lstNamen_SelectionChanged" />
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="205,21,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="btnPlus_Click"/>
+        <Label x:Name="lblAantalUren" Content="Aantal uren:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Margin="267,17,0,0"/>
+        <Label x:Name="lblUren" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Margin="345,17,0,0"/>
+        <Label x:Name="lbluurloon2" Content="Uurloon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Margin="267,48,0,0"/>
+        <Label x:Name="lblUurloon" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Margin="345,48,0,0"/>
+        <Button x:Name="btnNaarLijst" Content="Naar lijst" HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Height="33"  Margin="267,94,0,0" Click="btnNaarLijst_Click"/>
+        <TextBlock x:Name="tbxLijst" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="274" Width="246" Background="#FFE3F0FD" Margin="399,21,0,0"/>
 
     </Grid>
 </Window>
